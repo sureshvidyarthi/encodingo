@@ -872,7 +872,8 @@ body {
 .blog-card .card-content {
   position: relative;
   margin-inline: 15px;
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  text-align: center;
   padding: 20px;
   border-radius: var(--radius-10);
   box-shadow: var(--shadow-3);
@@ -907,17 +908,21 @@ body {
 }
 
 .blog-card .card-subtitle {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 900;
 }
 
 .blog-card .card-title {
   margin-block: 10px 15px;
   transition: var(--transition-1);
+  font-weight: bolder;
+  color: whitesmoke;
+  font-size: 36px;
 }
 
-.blog-card .card-title:is(:hover, :focus) {
+/* .blog-card .card-title:is(:hover, :focus) {
   color: var(--kappel);
-}
+} */
 
 .blog-card :is(.card-meta-list, .card-meta-item) {
   display: flex;
